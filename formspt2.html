@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form Validation</title>
+<style>
+body {
+    background-color: lightgoldenrodyellow;
+}
+</style>
+</head>
+
+<script>
+    window.addEventListener("load", function() {
+      let form = document.querySelector("form");
+      form.addEventListener("submit", function(event) {
+        alert("submit clicked");
+      });
+    });
+  </script>	
+	
+	
+	
+<body>
+<h2>1.) Add a box for Last Name to the form below.<br>
+  Be sure to add a Label and keep the formatting the same</h2>
+<form method="GET" action="https://handlers.education.launchcode.org/request-parrot"> 
+  <label for="fname">First name:</label>
+  <input name="fname" type="text" id="fname">
+  <br>
+	<label for="lname">Last name:</label>
+  <input name="lname" type="text" id="lname">
+	<br>
+	
+  <button>Submit</button>
+</form>
+<hr>
+<h2>2.)Create a form below with the following 2 text boxes: Email and Password<br>
+  Be sure to add Labels and a Submit button<br>
+  The Password should appear as *** when you type it in </h2>
+<!--put the form here -->
+	<form method="POST" action="https://handlers.education.launchcode.org/request-parrot">
+	<label for="email">Email:</label>
+     <input name="email" type="text" id="email">
+	<br>
+	 <label for="password">Password:</label>
+     <input name="Password" type="password" id="Password">
+	<br>
+	<button>Submit</button>
+	</form>
+	
+
+<hr>
+<h2>
+3) Add 2 more radio buttons for CSS and Javascript below.<br>
+You SHOULD use the same name for all 3 buttons
+</h2>
+	
+<form method="GET" action="https://handlers.education.launchcode.org/request-parrot">
+  <p>What's your favorite programming language?</p>
+   
+  <input type="radio" id="html" name="fav_language" value="HTML">
+   
+  <label for="html">HTML</label>
+  <br>
+	 <input type="radio" id="CSS" name="fav_language" value="CSS">
+   
+  <label for="CSS">CSS</label>
+	<br>
+	<input type="radio" id="Javascript" name="fav_language" value="Javascript">
+   
+  <label for="Javascript ">Javascript</label>
+	<br>
+   
+  <button>Submit</button>
+</form>
+<hr>
+<h2>4) Add 2 more checkboxes for "Car" and "Subway" <br>
+  Make sure that you use a DIFFERENT name for each checkbox</h2>
+<form method="GET" action="https://handlers.education.launchcode.org/request-parrot">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label>
+  <br>
+	<input type="checkbox" id="vehicle2" name="vehicle2" value="car">
+  <label for="vehicle1"> I have a car</label>
+<br>
+	<input type="checkbox" id="vehicle3" name="vehicle3" value="subway">
+  <label for="vehicle3"> I have a subway</label>
+<br>
+  <button>Submit</button>
+	<hr>
+
+
+	
+	<h2>5) Create a Registration form which asks for the following:
+First Name, Last Name, Date of birth. Be sure to add both a "Submit" and "Reset" button. Make sure Reset works</h2>
+<h4>Registration Form</h4>
+	<form method="POST" action="https://handlers.education.launchcode.org/request-parrot">
+	<label for="FirstName">First Name:</label>
+		<input name="FirstName" type="text" required="required" id="FirstName">
+		<br>
+		<label for="LastName">Last Name:</label>
+		<input name="LastName" type="text" required="required" id="LastName">
+		<br>
+		<label for="DOB">DOB:</label>
+		<input name="DOB" type="Date" required="required" id="DOB">
+		<br>
+  <input type="submit"><input type="reset">
+	
+		
+</form>
+	
+<h2>6) Create a Survey form which asks for the following:
+Full Name and favorite website. Be sure to use URL and mark both as "required". Add a submit button and check the boxes are required.</h2>
+Fav Site Survey Form
+<!--Add the form below-->
+	
+	<form method="GET" action="https://handlers.education.launchcode.org/request-parrot">
+
+<label for= "fullname"> Full Name:</label>
+<input name="fullname" type="text" required= "required" id="fullname" value="Enter your name...">
+<br>
+<label for="favwebsite" > Fav Site:</label>
+<input name="favwebsite" type="url" required="required" id="favwebsite" value="Enter your fav site here..">
+<br>
+<button>Submit</button>
+</form>
+
+	
+<hr>
+	
+<h2>7) Create a survey which asks for your favorite artist and submit a URL of your favorite music video. Add submit button</h2>
+	<!--Add the form below-->
+	
+	<form method="GET" action="https://handlers.education.launchcode.org/request-parrot">
+
+<label for= "favoriteartist"> Favorite artist:</label>
+<input name="favoriteartist" type="text" required= "required" id="favoriteartist" value="favorite artist...">
+<br>
+<label for="favmusicvid" > Fav Music Video:</label>
+<input name="favmusicvid" type="url" required="required" id="favmusicvid" value="Enter your fav music video..">
+<br>
+<button>Submit</button>
+</form>
+	
+	
+	
+</form>
+</body>
+</html>
